@@ -5,27 +5,30 @@ import { menuLinks } from '../data/dummydata';
 
 const Sidebar = () => {
   return (
-    <div className="h-screen ml-3 md:overflow-hidden overflow-auto md:hover:overflow-auto">
+    <div className="text-black h-screen ml-3 md:overflow-hidden overflow-auto md:hover:overflow-auto"
+    style={{display: "flex",flexDirection:"column",justifyContent:"space-between"}}>
         {menuLinks.map((item)=>
         (
-        <div className="flex justify-between items-center m-10 p-4 place-content-evenly">
+        <div className="text-black flex justify-between items-center m-10 p-4 place-content-evenly" 
+        style={{marginTop:"10px", fontWeight:"bold", color:"black", textAlign:"center",flexDirection:"column",justifyContent:"space-between"}}>
             
            <NavLink 
             to={item.path}
             key={item.title} 
-            className=" flex items-center gap-5 pl-4 pb-3 text-gray-600 hover:text-gray-800 font-semibold block py-2 px-4">
+            className=" flex items-center gap-5 pl-4 pb-3 text-gray-600 hover:text-gray-800 font-semibold py-2 px-4">
             {item.icon}
-            <span className="capitalize text-white">{item.title}</span>
+            &nbsp;&nbsp;<span className="capitalize text-black text-xl">{item.title}</span>
             </NavLink>
-            {/* {item.locations && item.locations.map((item)=>
-           
-            <p className="capitalize">&nbsp;&nbsp;&nbsp;&nbsp;{item.name}: {item.address}</p>
-          
-            
-                
+            {/* {item.locations && item.locations.map((item)=>           
+            <p className="capitalize">&nbsp;&nbsp;&nbsp;&nbsp;{item.name}: {item.address}</p>                          
            )} */}
-            </div>
+          </div>
         ))}
+        <div>
+          <div>
+            <p> hey </p>
+          </div>
+        </div>
 
     </div>
   )

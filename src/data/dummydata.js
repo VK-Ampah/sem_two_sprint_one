@@ -14,7 +14,7 @@ export const menus = [
                 id: 1,
                 name: "Pancakes",
                 price: 5,
-                image: process.env.PUBLIC_URL + "/images/bf1.jpg",
+                image: process.env.PUBLIC_URL + "/images/f2.jpg",
                 bgCpolor: "white"
             },
             {
@@ -82,44 +82,44 @@ export const menus = [
                 bgCpolor: "black"
             }
         ]
-    },
-    {
-        category: "SPECIAL_OCCASIONS",
-        items: [
-            {
-                id: 9,
-                name: "Fancy Dessert",
-                price: 6,
-                image: process.env.PUBLIC_URL + "/images/f7.jpg",
-                bgCpolor: "white"
-            },
-            {
-                id: 9,
-                name: "Fancy Dessert",
-                price: 6,
-                image: process.env.PUBLIC_URL + "/images/f7.jpg",
-                bgCpolor: "white"
-            }
-        ]
-    },
-    {
-        category: "FESTIVE_SEASONS",
-        items: [
-            {
-                id: 10,
-                name: "Holiday Roast",
-                price: 15,
-                image: process.env.PUBLIC_URL + "/images/f8.jpg",
-                bgCpolor: "black"
-            },
-            {
-                id: 10,
-                name: "Holiday Roast",
-                price: 15,
-                image: process.env.PUBLIC_URL + "/images/f8.jpg",
-                bgCpolor: "black"
-            }
-        ]
     }
+    // {
+    //     category: "SPECIAL_OCCASIONS",
+    //     items: [
+    //         {
+    //             id: 9,
+    //             name: "Fancy Dessert",
+    //             price: 6,
+    //             image: process.env.PUBLIC_URL + "/images/f7.jpg",
+    //             bgCpolor: "white"
+    //         },
+    //         {
+    //             id: 9,
+    //             name: "Fancy Dessert",
+    //             price: 6,
+    //             image: process.env.PUBLIC_URL + "/images/f7.jpg",
+    //             bgCpolor: "white"
+    //         }
+    //     ]
+    // },
+    // {
+    //     category: "FESTIVE_SEASONS",
+    //     items: [
+    //         {
+    //             id: 10,
+    //             name: "Holiday Roast",
+    //             price: 15,
+    //             image: process.env.PUBLIC_URL + "/images/f8.jpg",
+    //             bgCpolor: "black"
+    //         },
+    //         {
+    //             id: 10,
+    //             name: "Holiday Roast",
+    //             price: 15,
+    //             image: process.env.PUBLIC_URL + "/images/f8.jpg",
+    //             bgCpolor: "black"
+    //         }
+    //     ]
+    // }
 ];
 

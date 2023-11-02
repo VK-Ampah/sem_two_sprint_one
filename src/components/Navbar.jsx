@@ -20,13 +20,13 @@ const Navbar = () => {
     
   return (
     <>   
-    <div className="flex justify-between">
+    <div className="flex justify-between text-black">
         <div  className="flex items-center">
         {/* <div className="flex items center"> */}
         <NavButton
         icon={<AiOutlineMenu/>}
         tooltiptitle={(<div><strong>Menu</strong></div>)}
-        color="gray"
+        color="black"
         customFunc={()=>{alert('We are glad you are still here')}}/>
         </div>
         {/* </div> */}
@@ -34,22 +34,22 @@ const Navbar = () => {
             <NavButton
             icon={<BsChatLeft/>}
             tooltiptitle={(<div><strong>Chat</strong></div>)}
-            color="white"
+            color="black"
             customFunc={()=>{alert('We are glad you are still here')}}/>&nbsp;&nbsp;
             <NavButton
             icon={<BsChatLeftTextFill/>}
             tooltiptitle={(<div><strong>Chat</strong></div>)}
-            color="white"
+            color="black"
             customFunc={()=>{alert('We are glad you are still here')}}/>&nbsp;&nbsp;
             <NavButton
             icon={<FaUserAlt/>}
             tooltiptitle={(<div><strong>Alert</strong></div>)}
-            color="white"
+            color="black"
             customFunc={()=>{alert('We are glad you are still here')}}/>&nbsp;&nbsp;
             <NavButton
             icon={<RiNotification3Line/>}
             tooltiptitle={(<div><strong>Notification</strong></div>)}
-            color="white"
+            color="black"
             customFunc={()=>{alert('We are glad you are still here')}}/>&nbsp;&nbsp;
             
         </div>

@@ -13,16 +13,16 @@ const App = () => {
     <div>
         
         <BrowserRouter>
-        <div className="sidebar flex flex-relative bg-white">
-            <div className = "w-72 fixed bg-black sidebar text-white mt-4 h-screen ml-3">
+        <div className="flex flex-relative bg-slate-100">
+            <div className = "w-72 fixed bg-red-300 sidebar text-black mt-4 h-screen ml-3">
                 <Sidebar/>
             </div>
             <div className="min-h-screen w-full md:ml-72 text-white flex-2">
-                <div className= "h-1/6 fixed bg-black navbar md:static w-full justify-between mt-4 ml-3" style={{backgroundColor:"red"}}>
+                <div className= "h-32 fixed bg-red-300 navbar md:static w-full justify-between mt-4 ml-3">
                         <Navbar/>             
                 </div>
                 
-                <div classname="md:overflow-hidden overflow-auto">
+                <div classname="md:overflow-hidden overflow-auto bg-red-300">
                     <Routes>
                         <Route path="/" element={<Home/>}/>
                         <Route path="/menu" element={<Menu/>}/>
