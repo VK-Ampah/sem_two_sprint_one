@@ -7,26 +7,26 @@ import{RiNotification3Line} from 'react-icons/ri';
 import {Tooltip,} from 'react-tippy';
 
 const Navbar = () => {
-    const NavButton = ({icon,tooltiptitle,color,customFunc}) => {
-        return (
+    const NavButton = (({icon,tooltiptitle,color,customFunc}) => 
+        
             <Tooltip html={tooltiptitle} position="TopCenter">
                 <div className="navbutton flex items-center gap-2" >
                     <button type="button" onClick={customFunc}
                     className="relative text-xl text-gray-600 p-3" styel={{color}}>
                         <span className="absolute inline-flex rounded-full w-3 right-2 top-2"> {icon} </span> </button>
                 </div>
-            </Tooltip>
-        )
-    }
+            </Tooltip>)
+        
+    
   return (
-    <div className=" flex justify-between text-white relative bg-img-two">
-        <div className="flex items center">
-            <NavButton
-            icon={<AiOutlineMenu/>}
-            tooltiptitle={(<div><strong>Chat</strong></div>)}
-            color="gray"
-            customFunc={()=>{alert('We are glad you are still here')}}/>
-        </div>
+    <div className="flex w-full justify-between h-full text-white p-2 md:mx-6 relative bg-black">
+        {/* <div className="flex items center"> */}
+        <NavButton
+        icon={<AiOutlineMenu/>}
+        tooltiptitle={(<div><strong>Menu</strong></div>)}
+        color="gray"
+        customFunc={()=>{alert('We are glad you are still here')}}/>
+        {/* </div> */}
         <div className="flex">
             <NavButton
             icon={<BsChatLeft/>}
