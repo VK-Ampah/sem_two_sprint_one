@@ -7,12 +7,16 @@ const Home = () => {
 
    
   return (
-    <div className="ml-3 mt-12 color-black w-full" style={{backgroundColor:"blue"}}>
-        <div className='mt-12'>
-            <img src = {imageUrl} height="15px"/>
+    <div className="ml-3 mt-12 color-black w-full md:overflow-hidden overflow-auto" style={{backgroundColor:"blue"}}>
+        <div className='mt-12 w-full'>
+            <img src = {imageUrl} width="100%" height="50px"/>
         </div>
         <div>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero voluptas repellendus repellat quasi est ipsa ut iusto! Excepturi vitae, ratione omnis, odio, itaque ipsa obcaecati pariatur facilis ut quisquam esse.</p>
+            <h1>Indulge Your Senses at SPRINT 1</h1>
+            <p>Embark on a culinary adventure where flavors dance and aromas enchant. At <span class="restaurant-name">[Your Restaurant Name]</span>, we take pride in crafting unforgettable culinary experiences.</p>
+            <p>From the sizzle of our grill to the delicate artistry of our desserts, every dish is a celebration of taste and creativity.</p>
+            <p>Our passionate chefs source the finest ingredients to weave together a menu that caters to diverse palates. Whether you crave the comforting warmth of a home-cooked meal or the excitement of bold, innovative flavors, our restaurant is the place where your gastronomic dreams come true.</p>
+            <p>Join us on a culinary journey where each bite tells a story, and every meal is a masterpiece. Discover the joy of dining anew; your adventure begins here.</p>
         </div>
         <div className="flex flex-wrap lg:flex-nowrap justify-center bg-black text-white mb-12">
             {/* <div>
@@ -25,14 +29,14 @@ const Home = () => {
 
             </div> */}
             {menus.map((item) => 
-            <div className="flex flex-wrap justify-center  items-center p-2 mt-12">
-                <div key = {item.items[0]} className="m-3 ml-3 mt-3 pt-3 p-2"  style={{marginTop:"10px", backgroundColor: "white"}}>
-                    <img src={item.items[0].image} width="100%" height="100%" alt="dish"/>
+            <div className="flex flex-wrap flex-end justify-center  items-center p-2 mt-12">
+                <div key = {item.items[0]} className="flex m-3 ml-3 mt-3 pt-3 p-2"  style={{marginTop:"10px", backgroundColor: "white"}}>
+                    <img src={item.items[0].image} width="200px" height="100px" alt="dish"/>
                     <p>{item.category}</p>
                     <p>{item.items[0].name}</p>
                 </div>
                 <div key = {item.items[1]} className="m-3 ml-3 mt-3 pt-3 p-2"  style={{marginTop:"10px"}}>
-                    <img src={item.items[1].image} width="100%" height="100%" alt="dish"/>
+                    <img src={item.items[1].image} width="200px" height="100px" alt="dish"/>
                     <p>{item.category}</p>
                     <p>{item.items[1].name}</p>
                 </div>

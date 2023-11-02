@@ -18,11 +18,11 @@ const App = () => {
                 <Sidebar/>
             </div>
             <div className="min-h-screen w-full md:ml-72 text-white flex-2">
-                <div className= "navbar h-1/6 bg-black fixed md:static w-full justify-between mt-4 ml-3">
+                <div className= "h-1/6 fixed bg-black navbar md:static w-full justify-between mt-4 ml-3" style={{backgroundColor:"red"}}>
                         <Navbar/>             
                 </div>
                 
-                <div>
+                <div classname="md:overflow-hidden overflow-auto">
                     <Routes>
                         <Route path="/" element={<Home/>}/>
                         <Route path="/menu" element={<Menu/>}/>

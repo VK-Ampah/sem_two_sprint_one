@@ -19,13 +19,16 @@ const Navbar = () => {
         
     
   return (
-    <div className="flex w-full justify-between h-full text-white p-2 md:mx-6 relative bg-black">
+    <>   
+    <div className="flex justify-between">
+        <div  className="flex items-center">
         {/* <div className="flex items center"> */}
         <NavButton
         icon={<AiOutlineMenu/>}
         tooltiptitle={(<div><strong>Menu</strong></div>)}
         color="gray"
         customFunc={()=>{alert('We are glad you are still here')}}/>
+        </div>
         {/* </div> */}
         <div className="flex">
             <NavButton
@@ -51,6 +54,9 @@ const Navbar = () => {
             
         </div>
     </div>
+    </>
+
+   
   )
 }
 
