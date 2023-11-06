@@ -83,43 +83,37 @@ export const menus = [
             }
         ]
     }
-    // {
-    //     category: "SPECIAL_OCCASIONS",
-    //     items: [
-    //         {
-    //             id: 9,
-    //             name: "Fancy Dessert",
-    //             price: 6,
-    //             image: process.env.PUBLIC_URL + "/images/f7.jpg",
-    //             bgCpolor: "white"
-    //         },
-    //         {
-    //             id: 9,
-    //             name: "Fancy Dessert",
-    //             price: 6,
-    //             image: process.env.PUBLIC_URL + "/images/f7.jpg",
-    //             bgCpolor: "white"
-    //         }
-    //     ]
-    // },
-    // {
-    //     category: "FESTIVE_SEASONS",
-    //     items: [
-    //         {
-    //             id: 10,
-    //             name: "Holiday Roast",
-    //             price: 15,
-    //             image: process.env.PUBLIC_URL + "/images/f8.jpg",
-    //             bgCpolor: "black"
-    //         },
-    //         {
-    //             id: 10,
-    //             name: "Holiday Roast",
-    //             price: 15,
-    //             image: process.env.PUBLIC_URL + "/images/f8.jpg",
-    //             bgCpolor: "black"
-    //         }
-    //     ]
-    // }
 ];
 
+export const foodCategories = [
+    {
+      id: 1,
+      category: 'Breakfast',
+      items: ['Pancakes', 'Eggs', 'Toast', 'Cereal'],
+      image: process.env.PUBLIC_URL + "/images/f1.jpg"
+    },
+    {
+      id: 2,
+      category: 'Snacks',
+      items: ['Chips', 'Nuts', 'Popcorn', 'Fruit Salad'],
+      image: process.env.PUBLIC_URL + "/images/f2.jpg"
+    },
+    {
+      id: 3,
+      category: 'Lunch',
+      items: ['Sandwich', 'Salad', 'Soup', 'Burger'],
+      image: process.env.PUBLIC_URL + "/images/f3.jpg"
+    },
+    {
+      id: 4,
+      category: 'Dinner',
+      items: ['Steak', 'Pasta', 'Fish', 'Pizza'],
+      image: process.env.PUBLIC_URL + "/images/f4.jpg"
+    },
+    {
+      id: 5,
+      category: 'Dessert',
+      items: ['Cake', 'Ice Cream', 'Cookies', 'Pie'],
+      image: process.env.PUBLIC_URL + "/images/f5.jpg"
+    }
+  ];  

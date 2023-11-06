@@ -1,41 +1,9 @@
-import { useRef } from 'react';
+import { Footer } from '../components';
+import { foodCategories } from '../data/dummydata';
 
 const Orders = () => {
-  const foodCategories = [
-    {
-      id: 1,
-      category: 'Breakfast',
-      items: ['Pancakes', 'Eggs', 'Toast', 'Cereal'],
-      image: process.env.PUBLIC_URL + "/images/f1.jpg"
-    },
-    {
-      id: 2,
-      category: 'Snacks',
-      items: ['Chips', 'Nuts', 'Popcorn', 'Fruit Salad'],
-      image: process.env.PUBLIC_URL + "/images/f2.jpg"
-    },
-    {
-      id: 3,
-      category: 'Lunch',
-      items: ['Sandwich', 'Salad', 'Soup', 'Burger'],
-      image: process.env.PUBLIC_URL + "/images/f3.jpg"
-    },
-    {
-      id: 4,
-      category: 'Dinner',
-      items: ['Steak', 'Pasta', 'Fish', 'Pizza'],
-      image: process.env.PUBLIC_URL + "/images/f4.jpg"
-    },
-    {
-      id: 5,
-      category: 'Dessert',
-      items: ['Cake', 'Ice Cream', 'Cookies', 'Pie'],
-      image: process.env.PUBLIC_URL + "/images/f5.jpg"
-    }
-  ];  
 
- 
-  const submitAction = () => {document.getElementsByClassName('submitaction').innerHTML = 'Thank you for your order'}
+
 
   return (
     <div className="flex flex-col justify-center text-black bg-red-100 overflow-hidden h-full">
@@ -73,6 +41,9 @@ const Orders = () => {
             </button>
           </p>
         </form>
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );
