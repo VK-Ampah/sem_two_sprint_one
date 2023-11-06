@@ -20,11 +20,11 @@ const Menu = () => {
 
    
   return (
-    <div className="ml-3 color-black w-full md:overflow-hidden overflow-auto bg-red-100">
+    <div className="ml-3 color-black w-full md:overflow-hidden overflow-auto bg-red-100 font-semibold">
         <div className='mt-12 w-full'>
             <img src = {imageUrl} width="100%" height="50px" style={{marginTop:"10px", color:"black", borderRadius:"20%"}}/>
         </div>
-        <div  style={{marginTop:"10px", color:"black", textAlign:"center"}}>
+        <div className="font-semibold"  style={{marginTop:"10px", color:"black", textAlign:"center"}}>
             <h1 className="text-3xl font-semibold" style={{marginTop:"10px", color:"black", borderRadius:"10%", fontSize:"30px", fontWeight:"bold"}}>Delicious Menu Items</h1>
             <p>Experience the best cousine in Town</p>
             <p>From the sizzle of our grill to the delicate artistry of our desserts.</p>
@@ -33,7 +33,7 @@ const Menu = () => {
             
            
         </div>
-        <div className="flex flex-wrap lg:flex-nowrap justify-center text-white mb-12">
+        <div className="font-semibold flex flex-wrap lg:flex-nowrap justify-center text-white mb-12">
 
             {menus.map((item) => 
             <div className="flex flex-nowrap flex-end justify-center  items-center p-2 mt-12">

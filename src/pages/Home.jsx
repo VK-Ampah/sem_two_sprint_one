@@ -20,7 +20,7 @@ const Home = () => {
 
    
   return (
-    <div className="ml-3 p-4 color-black w-full md:overflow-hidden overflow-auto sm:w-auto bg-red-100">
+    <div className="ml-3 p-4 color-black w-full md:overflow-hidden overflow-auto sm:w-auto bg-red-100 font-semibold">
         <div className='mt-12 w-full'>
             <img  className=" md:h-auto md:w-full md:overflow-auto md:overflow-hidden sm:h-auto sm:w-full sm:overflow-auto sm:overflow-hidden" src = {imageUrl} width="100%" height="50px" style={{marginTop:"10px", color:"black", borderRadius:"20%"}}/>
         </div>
