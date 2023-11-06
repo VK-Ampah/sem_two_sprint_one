@@ -25,9 +25,12 @@ const Menu = () => {
             <img src = {imageUrl} width="100%" height="50px" style={{marginTop:"10px", color:"black", borderRadius:"20%"}}/>
         </div>
         <div  style={{marginTop:"10px", color:"black", textAlign:"center"}}>
-            <h1 style={{marginTop:"10px", color:"black", borderRadius:"10%", fontSize:"30px", fontWeight:"bold"}}>Indulge Your Senses at SPRINT 1</h1>
-            <p>Embark on a culinary adventure where flavors dance and aromas enchant. At <span class="restaurant-name">[Your Restaurant Name]</span>, we take pride in crafting unforgettable culinary experiences.</p>
-            <p>From the sizzle of our grill to the delicate artistry of our desserts, every dish is a celebration of taste and creativity.</p>
+            <h1 className="text-3xl font-semibold" style={{marginTop:"10px", color:"black", borderRadius:"10%", fontSize:"30px", fontWeight:"bold"}}>Delicious Menu Items</h1>
+            <p>Experience the best cousine in Town</p>
+            <p>From the sizzle of our grill to the delicate artistry of our desserts.</p>
+            <p>Every dish is a celebration of taste and creativity.</p>
+            <p>Embark on a culinary adventure where flavors dance and aromas enchant.</p>
+            
            
         </div>
         <div className="flex flex-wrap lg:flex-nowrap justify-center text-white mb-12">

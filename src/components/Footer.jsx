@@ -4,8 +4,9 @@ import { FiMapPin } from 'react-icons/fi'
 
 const Footer = () => {
     return (
-        <footer>
-            <div style={{fontStyle:"italic",color:"black",fontWeight:"bold"}}><p> LOCATE US HERE</p>
+        <footer className="">
+            <div style={{fontStyle:"italic",color:"black",fontWeight:"bold"}}>
+                <p> LOCATE US HERE</p>
             </div>
 
             <div style={{ display: "flex", justifyContent:"space-between", width:"100%",textAlign:"center",color:"black", fontWeight:"bold"}}>

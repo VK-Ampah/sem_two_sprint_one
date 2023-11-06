@@ -23,18 +23,22 @@ const Navbar = () => {
     <div className="flex justify-between text-black">
         <div  className="flex items-center text-2xl font-semi-bold">
         {/* <div className="flex items center"> */}
-        <NavButton
-        icon={<AiOutlineMenu/>}
-        tooltiptitle={(<div><strong>Menu</strong></div>)}
-        color="black"
-        customFunc={()=>{alert('We are glad you are still here')}}/>
+        <button type="button" ClassName="text-4xl font-semibold rounded-full fill-slate-900">
+            <NavButton
+            icon={<AiOutlineMenu/>}
+            tooltiptitle={(<div><strong>Menu</strong></div>)}
+            color="black"
+            customFunc={()=>{alert('We are glad you are still here')}}
+            className="text-4xl font-semibold fill-slate-900"/>
+        </button>
         </div>
         <div>
-            <h1 className=" italic h-full text-3xl font-semi-bold">WELCOME TO SPRINTTEAM16 RESTAURANT</h1>
+            <h1 className=" italic h-full text-3xl font-semi-bold">WELCOME  TO  SPRINT-TEAM  RESTAURANT</h1>
         </div>
         {/* </div> */}
-        <div className="flex text-2xl font-semi-bold">
+        <div className="flex text-2xl font-semibold">
             <NavButton
+            className="font-bold text-4xl text-blue-500"
             icon={<BsChatLeft/>}
             tooltiptitle={(<div><strong>Chat</strong></div>)}
             color="black"

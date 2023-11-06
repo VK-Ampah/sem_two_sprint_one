@@ -1,4 +1,4 @@
-import React from 'react'
+import { useRef } from 'react';
 
 const Orders = () => {
   const foodCategories = [
@@ -34,6 +34,9 @@ const Orders = () => {
     }
   ];  
 
+ 
+  const submitAction = () => {document.getElementsByClassName('submitaction').innerHTML = 'Thank you for your order'}
+
   return (
     <div className="flex flex-col justify-center text-black bg-red-100 overflow-hidden h-full">
       <div className="flex justify-center">
@@ -58,14 +61,15 @@ const Orders = () => {
         <form className='border-10 text-bold border-8 p-4'>
           <h1 className="text-3xl font-semibold">Please enter your details to complete your order</h1><br/>
           <label htmlFor="Firstname">First Name</label><br/>
-          <input type='text' name="Firstname" placeholder='Enter your firstname' /><br/><br/>
+          <input className="w-64 border border-black" type='text' name="Firstname" placeholder='Enter your firstname' /><br/><br/>
           <label htmlFor="Lastname">Last Name</label><br/>
-          <input type='text' name="Lastname" placeholder='Enter your lastname' />
+          <input className="w-64 border border-black" type='text' name="Lastname" placeholder='Enter your lastname' />
           
           <p>
-            <button className="rounded-md rounded-md text-white justify-center bg-slate-600"
-            onClick={()=>{alert(`Thank you for your order`)}}>
-              <input type='submit' value='Submit' />
+            <button 
+            className="rounded-md m-2 rounded-md text-white justify-center bg-slate-600"
+            onClick={()=>{alert('Thank you for your Order')}}>
+              <input type='submit' value='Submit' className="p-2 font-bold" />
             </button>
           </p>
         </form>

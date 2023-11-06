@@ -26,7 +26,7 @@ const Sidebar = () => {
         ))}
         <div>
           <div>
-            <p> hey </p>
+            <p className="text-center font-semibold text-3xl italic"> We Serve You better </p>
           </div>
         </div>
 
