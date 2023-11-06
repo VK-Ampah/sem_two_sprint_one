@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <>   
     <div className="flex justify-between text-black">
-        <div  className="flex items-center">
+        <div  className="flex items-center text-2xl font-semi-bold">
         {/* <div className="flex items center"> */}
         <NavButton
         icon={<AiOutlineMenu/>}
@@ -30,7 +30,7 @@ const Navbar = () => {
         customFunc={()=>{alert('We are glad you are still here')}}/>
         </div>
         {/* </div> */}
-        <div className="flex">
+        <div className="flex text-2xl font-semi-bold">
             <NavButton
             icon={<BsChatLeft/>}
             tooltiptitle={(<div><strong>Chat</strong></div>)}

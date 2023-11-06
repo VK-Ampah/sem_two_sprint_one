@@ -13,7 +13,7 @@ const App = () => {
     <div>
         
         <BrowserRouter>
-        <div className="flex flex-relative bg-slate-100">
+        <div className="flex flex-relative bg-slate-300">
             <div className = "w-72 fixed bg-red-300 sidebar text-black mt-4 h-screen ml-3">
                 <Sidebar/>
             </div>

@@ -1,79 +1,76 @@
 import React from 'react'
 
 const Orders = () => {
-  const dishes = [
+  const foodCategories = [
     {
       id: 1,
-      name: "Pizza",
-      price: 10,
-      image: process.env.PUBLIC_URL + "/images/img1.jpg"
+      category: 'Breakfast',
+      items: ['Pancakes', 'Eggs', 'Toast', 'Cereal'],
+      image: process.env.PUBLIC_URL + "/images/f1.jpg"
     },
     {
       id: 2,
-      name: "Burger",
-      price: 5,
-      image: process.env.PUBLIC_URL + "/images/img2.jpg"
+      category: 'Snacks',
+      items: ['Chips', 'Nuts', 'Popcorn', 'Fruit Salad'],
+      image: process.env.PUBLIC_URL + "/images/f2.jpg"
     },
     {
       id: 3,
-      name: "Hot Dog  ",        
-      price: 3,  
-      image: process.env.PUBLIC_URL + "/images/img3.jpg"
+      category: 'Lunch',
+      items: ['Sandwich', 'Salad', 'Soup', 'Burger'],
+      image: process.env.PUBLIC_URL + "/images/f3.jpg"
     },
     {
-      id: 1,
-      name: "Pizza",
-      price: 10,
-      image: process.env.PUBLIC_URL + "/images/img4.jpg"
+      id: 4,
+      category: 'Dinner',
+      items: ['Steak', 'Pasta', 'Fish', 'Pizza'],
+      image: process.env.PUBLIC_URL + "/images/f4.jpg"
     },
     {
-      id: 2,
-      name: "Burger",
-      price: 5,
-      image: process.env.PUBLIC_URL + "/images/img5.jpg"
-    },
-    {
-      id: 3,
-      name: "Hot Dog  ",        
-      price: 3,  
-      image: process.env.PUBLIC_URL + "/images/product5.jpg"
-    }]
+      id: 5,
+      category: 'Dessert',
+      items: ['Cake', 'Ice Cream', 'Cookies', 'Pie'],
+      image: process.env.PUBLIC_URL + "/images/f5.jpg"
+    }
+  ];  
 
   return (
-
-    <div className="flex flex-col space-y-4" style={{backgroundColor:"white"}}>
-      <div  className='flex space-x-4 w-full m-2'>
-      {dishes.map((dish)=>( 
-          <div class="m-5">
-          <img src={dish.image} width="200px" alt="dish"/>
-          <p>{dish.name}</p>
-          <p>{dish.price}</p>
-          </div>))}
+    <div className="flex flex-col justify-center text-black bg-red-300 overflow-hidden h-full">
+      <div className="flex justify-center">
+        <form className='bg-red-300'>
+          <h1 className='text-2xl font-semibold justify-center text-center'>Select your menu items</h1>
+          {foodCategories.map((item) => (
+            <div key={item.id} className= "flex flex-col border-8 rounded-md p-2 justify-center">
+              <h2 className="p-4 m-4 text-3l font-bold">{item.category}</h2>
+              <img src={item.image} alt={item.category} className="w-full h-full" />
+              {item.items.map((item, index) => (
+                <div className= "border-8 rounded-md p-2 justify-center font-bold" key={index}>
+                  <input type='checkbox' id={item} name={item} />
+                  <label htmlFor={item}>{item}</label>
+                </div>
+              ))}
+            </div>
+          ))}
+        
+        </form>
       </div>
-
-        <div className='w-full flex space-x-4flex-row m-2'>
-          {dishes.map((dish)=>( 
-          <div class="m-5">
-          <img src={dish.image} width="200px" alt="dish"/>
-          <p>{dish.name}</p>
-          <p>{dish.price}</p>
-          </div>))}
-          </div>
-
-          <div className='w-full flex space-x-4 flex-row m-2'>
-          {dishes.map((dish)=>( 
-          <div class="m-5">
-          <img src={dish.image} width="200px" alt="dish"/>
-          <p>{dish.name}</p>
-          <p>{dish.price}</p>
-          </div>))}
-          </div>
-
+      <div className='mt-12 flex justify-center font-semibold'>
+        <form className='border-10 text-bold border-8'>
+          <h1 className="text-3xl font-semibold">Please enter your details to complete your order</h1><br/>
+          <label htmlFor="Firstname">First Name</label><br/>
+          <input type='text' name="Firstname" placeholder='Enter your firstname' /><br/><br/>
+          <label htmlFor="Lastname">Last Name</label><br/>
+          <input type='text' name="Lastname" placeholder='Enter your lastname' />
           
+          <p>
+            <button className="rounded-md rounded-md text-white justify-center bg-slate-600">
+              <input type='submit' value='Submit' />
+            </button>
+          </p>
+        </form>
+      </div>
     </div>
-    
-
-  )
-}
+  );
+};
 
 export default Orders
