@@ -35,16 +35,16 @@ const Orders = () => {
   ];  
 
   return (
-    <div className="flex flex-col justify-center text-black bg-red-300 overflow-hidden h-full">
+    <div className="flex flex-col justify-center text-black bg-red-100 overflow-hidden h-full">
       <div className="flex justify-center">
-        <form className='bg-red-300'>
-          <h1 className='text-2xl font-semibold justify-center text-center'>Select your menu items</h1>
+        <form className='bg-red-100'>
+          <h1 className='text-3xl font-semibold justify-center text-center pb-2'>Select your menu items</h1>
           {foodCategories.map((item) => (
-            <div key={item.id} className= "flex flex-col border-8 rounded-md p-2 justify-center">
-              <h2 className="p-4 m-4 text-3l font-bold">{item.category}</h2>
-              <img src={item.image} alt={item.category} className="w-full h-full" />
+            <div key={item.id} className= "flex flex-col border-8 border-slate-700 rounded-md p-2 justify-center">
+              <h2 className="p-4 m-4 text-2xl font-semibold">{item.category}</h2>
+              <img src={item.image} alt={item.category} className="w-full h-full rounded-full" />
               {item.items.map((item, index) => (
-                <div className= "border-8 rounded-md p-2 justify-center font-bold" key={index}>
+                <div className= "border-8 border-slate-700 rounded-md p-2 justify-center font-bold" key={index}>
                   <input type='checkbox' id={item} name={item} />
                   <label htmlFor={item}>{item}</label>
                 </div>
@@ -54,8 +54,8 @@ const Orders = () => {
         
         </form>
       </div>
-      <div className='mt-12 flex justify-center font-semibold'>
-        <form className='border-10 text-bold border-8'>
+      <div className='mt-12 p-4 flex justify-center font-semibold'>
+        <form className='border-10 text-bold border-8 p-4'>
           <h1 className="text-3xl font-semibold">Please enter your details to complete your order</h1><br/>
           <label htmlFor="Firstname">First Name</label><br/>
           <input type='text' name="Firstname" placeholder='Enter your firstname' /><br/><br/>
@@ -63,7 +63,8 @@ const Orders = () => {
           <input type='text' name="Lastname" placeholder='Enter your lastname' />
           
           <p>
-            <button className="rounded-md rounded-md text-white justify-center bg-slate-600">
+            <button className="rounded-md rounded-md text-white justify-center bg-slate-600"
+            onClick={()=>{alert(`Thank you for your order`)}}>
               <input type='submit' value='Submit' />
             </button>
           </p>

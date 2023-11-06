@@ -29,6 +29,9 @@ const Navbar = () => {
         color="black"
         customFunc={()=>{alert('We are glad you are still here')}}/>
         </div>
+        <div>
+            <h1 className=" italic h-full text-3xl font-semi-bold">WELCOME TO SPRINTTEAM16 RESTAURANT</h1>
+        </div>
         {/* </div> */}
         <div className="flex text-2xl font-semi-bold">
             <NavButton

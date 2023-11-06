@@ -20,7 +20,7 @@ const Menu = () => {
 
    
   return (
-    <div className="ml-3 mt-12 color-black w-full md:overflow-hidden overflow-auto bg-red-100">
+    <div className="ml-3 color-black w-full md:overflow-hidden overflow-auto bg-red-100">
         <div className='mt-12 w-full'>
             <img src = {imageUrl} width="100%" height="50px" style={{marginTop:"10px", color:"black", borderRadius:"20%"}}/>
         </div>

@@ -20,13 +20,13 @@ const Home = () => {
 
    
   return (
-    <div className="ml-3 mt-12 color-black w-full md:overflow-hidden overflow-auto bg-red-300">
+    <div className="ml-3 color-black w-full md:overflow-hidden overflow-auto bg-red-100">
         <div className='mt-12 w-full'>
             <img src = {imageUrl} width="100%" height="50px" style={{marginTop:"10px", color:"black", borderRadius:"20%"}}/>
         </div>
         <div  style={{marginTop:"10px", color:"black", textAlign:"center"}}>
             <h1 style={{marginTop:"10px", color:"black", borderRadius:"10%", fontSize:"30px", fontWeight:"bold"}}>Indulge Your Senses at SPRINT 1</h1>
-            <p>Embark on a culinary adventure where flavors dance and aromas enchant. At <span class="restaurant-name">[Your Restaurant Name]</span>, we take pride in crafting unforgettable culinary experiences.</p>
+            <p>Embark on a culinary adventure where flavors dance and aromas enchant. At <span className='italic font-semibold'>Sprint 16 Eatery</span>, we take pride in crafting unforgettable culinary experiences.</p>
             <p>From the sizzle of our grill to the delicate artistry of our desserts, every dish is a celebration of taste and creativity.</p>
            
         </div>
