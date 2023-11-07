@@ -1,5 +1,16 @@
 # Getting Started with Create React App
 
+# EXTERNAL CSS MODULE
+- Tailwind css was used to style the pages as well as some inline css rules were applied
+
+# DATA
+- All data can be found in the src/data folder
+
+# IMAGES
+- All images can be found in public/images
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
